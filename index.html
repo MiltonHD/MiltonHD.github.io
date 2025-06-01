@@ -1,0 +1,280 @@
+<html>
+<head>
+    <style>
+       body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #101111;
+        color: #ffffff;
+    }
+         .logo-titulo {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        background-color: #680e0e;
+        border-bottom: 2px solid #b7acac;
+    }
+
+    .logo-titulo img {
+        width: 90px;
+        height: motos;
+        border-radius: 10px;
+    }
+        .logo-titulo h1 {
+        margin: 0;
+        font-size: 28px;
+        color: #252d30;
+    }
+         h2 {
+        color: #41a3d5;
+        border-left: 4px solid #1e2021;
+        padding-left: 10px;
+        margin-top: 30px;
+         }
+        div {
+        padding: 20px 40px;
+    }
+        
+ p {
+        line-height: 1.4;
+        font-size: 16px;
+    }
+
+ a {
+     color: #3a9dff;
+     text-decoration: none;
+ }
+ a:hover {
+     color: #3478ff;
+     text-decoration: underline;
+    }
+        
+ img {
+        border-radius: 10px;
+        margin: 10px;
+        box-shadow: 0 4px 10px rgba(63, 133, 161, 0.5);
+    
+    }
+         table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #337e99;
+        margin-top: 20px;
+    }
+ th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #e4e7ea;
+    }
+
+    th {
+        background-color: #a3a8ad;
+        color: #1d2229;
+    }
+
+    td {
+        color: #e9e2e2;
+    }
+        table, th, td {
+            border: 1px solid rgb(218, 225, 227);
+        }
+        #zoomModal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(131, 45, 45, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.3s ease;
+        }
+        #zoomImg {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+    </style>
+
+    <title>Mundo_Motos</title>
+</head>
+<body>
+    <div>
+    <h1>SOLO JOYAS</h1>
+
+    <p>Echale un vistaso a nuestra colección de motocicletas.</p>
+    </div> <!-- Para dividir las secciones -->
+
+    <div>
+    <h2>Modelos Populares</h2>
+    <ul>
+        <li>Yamaha R1</li>
+        <li>Kawasaki Ninja ZX-10R</li>
+        <li>Honda CBR 1000RR</li>
+        <li>Suzuki GSX-R1000</li>
+        <li>Ducati Panigale V4</li>
+        </div> <!-- Para dividir las secciones -->
+    </ul>
+
+    <div>
+        <h2>Galería</h2>
+        <hr>
+    <h3>Yamaha R1</h3>
+    <img src="https://www.yamahamotos.cl/wp-content/uploads/2022/07/r1_negra.jpg" alt="Yamaha R1" width="300">
+     
+        <table style="width: 500px;"> <!-- style="width: 500px;" es para cambiarle el tamaño a la tabla -->
+            <thead> <!-- Es para agrupar los elementos de la cabecera de la tabla -->
+                <tr>
+                    <th>Caracteristicas</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody> <!-- es para agrupar el contenido de la tabla-->
+            <tr>
+                <td>Motor</td>
+                <td>4 cilindros en línea, 998 cc</td>
+            </tr>
+            <tr>
+                <td>Potencia máxima</td>
+                <td>200 HP - 13,500 rpm</td>
+            </tr>
+            <tr>
+                <td>Transmisión</td>
+                <td>6 velocidades, Quick Shifter</td>
+            </tr>
+            <tr>
+                <td>peso</td>
+                <td>201 kg</td>
+            </tr>
+            </tbody>
+    </table>
+    <hr>
+    <h3>Kawasaki Ninja ZX-10R</h3>
+    <img src="https://comprarmoto.com.ar/wp-content/uploads/2024/02/kawasaki_zx_10.jpg" alt="Kawasaki Ninja" width="300">
+
+    <table style="width: 500px;"> <!-- style="width: 500px;" es para cambiarle el tamaño a la tabla -->
+            <thead> <!-- Es para agrupar los elementos de la cabecera de la tabla -->
+                <tr>
+                    <th>Caracteristicas</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody> <!-- es para agrupar el contenido de la tabla-->
+            <tr>
+                <td>Motor</td>
+                <td>4 cilindros en línea, 998 cc </td>
+            </tr>
+            <tr>
+                <td>Potencia máxima</td>
+                <td>203 HP - 13,200 rpm</td>
+            </tr>
+            <tr>
+                <td>Transmisión</td>
+                <td>6 velocidades con Quick Shifter</td>
+            </tr>
+            <tr>
+                <td>Peso</td>
+                <td>207 kg</td>
+            </tr>
+            </tbody>
+    </table>
+    <hr>
+    <h3>Honda CBR 1000RR</h3>
+    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/23190/cbr1000rr-right-front-three-quarter.jpeg?isig=0&q=80" alt="Honda CBR 1000RR" width="300">
+
+    <table style="width: 500px;"> <!-- style="width: 500px;" es para cambiarle el tamaño a la tabla -->
+            <thead> <!-- Es para agrupar los elementos de la cabecera de la tabla -->
+                <tr>
+                    <th>Caracteristicas</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody> <!-- es para agrupar el contenido de la tabla-->
+            <tr>
+                <td>Motor</td>
+                <td>4 cilindros en línea, 999 cc</td>
+            </tr>
+            <tr>
+                <td>Potencia máxima</td>
+                <td>215 HP - 14,500 rpm (versión SP)</td>
+            </tr>
+            <tr>
+                <td>Transmisión</td>
+                <td>6 velocidades, Quick Shifter</td>
+            </tr>
+            <tr>
+                <td>peso</td>
+                <td>201 kg (versión estándar)</td>
+            </tr>
+            </tbody>
+    </table>
+    <hr>
+    <h3>Suzuki GSX-R1000</h3>
+    <img src="https://suzukimotorcycles.com.au/wp-content/uploads/2024/09/GSX-R1000AM5_AV4_Product_VAR.jpg" alt="Suzuki GSX-R1000" width="300">
+
+    <table style="width: 500px;"> <!-- style="width: 500px;" es para cambiarle el tamaño a la tabla -->
+            <thead> <!-- Es para agrupar los elementos de la cabecera de la tabla -->
+                <tr>
+                    <th>Caracteristicas</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody> <!-- es para agrupar el contenido de la tabla-->
+            <tr>
+                <td>Motor</td>
+                <td>4 cilindros en línea, 999.8 cc</td>
+            </tr>
+            <tr>
+                <td>Potencia máxima</td>
+                <td>202 HP - 13,200 rpm</td>
+            </tr>
+            <tr>
+                <td>Transmisión</td>
+                <td>6 velocidades con Quick Shifter bidireccional</td>
+            </tr>
+            <tr>
+                <td>Peso</td>
+                <td>202 kg</td>
+            </tr>
+            </tbody>
+    </table>
+    <hr>
+    <h3>Ducati Panigale V4</h3>
+    <img src="https://ducatilondon.co.uk/storage/images/panigale-v4-2025-7.jpeg" alt="Ducati Panigale V4" width="300">
+
+    <table style="width: 500px;"> <!-- style="width: 500px;" es para cambiarle el tamaño a la tabla -->
+            <thead> <!-- Es para agrupar los elementos de la cabecera de la tabla -->
+                <tr>
+                    <th>Caracteristicas</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody> <!-- es para agrupar el contenido de la tabla-->
+            <tr>
+                <td>Motor</td>
+                <td>Desmosedici Stradale V4, 1103 cc</td>
+            </tr>
+            <tr>
+                <td>Potencia máxima</td>
+                <td>215.5 HP - 13,000 rpm</td>
+            </tr>
+            <tr>
+                <td>Transmisión</td>
+                <td>6 velocidades con Ducati Quick Shift (DQS)</td>
+            </tr>
+            <tr>
+                <td>Peso</td>
+                <td>198 kg (en seco)</td>
+            </tr>
+            </tbody>
+    </table>
+    <hr>
+    <div style="color: #50b3ff;">
+        <a target="_blank" href="https://fer0104.github.io/">¡Conoce nuestra otra pagina!</a>
+    </div>
+
+
+</body>
+</html>
