@@ -122,7 +122,7 @@
         <h2>Galería</h2>
         <hr>
     <h3>Yamaha R1</h3>
-    <img src="https://www.yamahamotos.cl/wp-content/uploads/2022/07/r1_negra.jpg" alt="Yamaha R1" width="300">
+    <img class="zoomable" src="https://www.yamahamotos.cl/wp-content/uploads/2022/07/r1_negra.jpg" alt="Yamaha R1" width="300">
      
         <table style="width: 500px;"> <!-- style="width: 500px;" es para cambiarle el tamaño a la tabla -->
             <thead> <!-- Es para agrupar los elementos de la cabecera de la tabla -->
@@ -152,7 +152,7 @@
     </table>
     <hr>
     <h3>Kawasaki Ninja ZX-10R</h3>
-    <img src="https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/2020_Ninja_ZX-10R_Performance_GN2_FRONT.jpg" alt="Kawasaki Ninja" width="300">
+    <img class="zoomable" src="https://storage.kawasaki.eu/public/kawasaki.eu/en-EU/model/2020_Ninja_ZX-10R_Performance_GN2_FRONT.jpg" alt="Kawasaki Ninja" width="300">
 
     <table style="width: 500px;"> <!-- style="width: 500px;" es para cambiarle el tamaño a la tabla -->
             <thead> <!-- Es para agrupar los elementos de la cabecera de la tabla -->
@@ -182,7 +182,7 @@
     </table>
     <hr>
     <h3>Honda CBR 1000RR</h3>
-    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/23190/cbr1000rr-right-front-three-quarter.jpeg?isig=0&q=80" alt="Honda CBR 1000RR" width="300">
+    <img class="zoomable" src="https://imgd.aeplcdn.com/664x374/n/cw/ec/23190/cbr1000rr-right-front-three-quarter.jpeg?isig=0&q=80" alt="Honda CBR 1000RR" width="300">
 
     <table style="width: 500px;"> <!-- style="width: 500px;" es para cambiarle el tamaño a la tabla -->
             <thead> <!-- Es para agrupar los elementos de la cabecera de la tabla -->
@@ -212,7 +212,7 @@
     </table>
     <hr>
     <h3>Suzuki GSX-R1000</h3>
-    <img src="https://suzukimotorcycles.com.au/wp-content/uploads/2024/09/GSX-R1000AM5_AV4_Product_VAR.jpg" alt="Suzuki GSX-R1000" width="300">
+    <img class="zoomable" src="https://suzukimotorcycles.com.au/wp-content/uploads/2024/09/GSX-R1000AM5_AV4_Product_VAR.jpg" alt="Suzuki GSX-R1000" width="300">
 
     <table style="width: 500px;"> <!-- style="width: 500px;" es para cambiarle el tamaño a la tabla -->
             <thead> <!-- Es para agrupar los elementos de la cabecera de la tabla -->
@@ -242,7 +242,7 @@
     </table>
     <hr>
     <h3>Ducati Panigale V4</h3>
-    <img src="https://ducatilondon.co.uk/storage/images/panigale-v4-2025-7.jpeg" alt="Ducati Panigale V4" width="300">
+    <img class="zoomable" src="https://ducatilondon.co.uk/storage/images/panigale-v4-2025-7.jpeg" alt="Ducati Panigale V4" width="300">
 
     <table style="width: 500px;"> <!-- style="width: 500px;" es para cambiarle el tamaño a la tabla -->
             <thead> <!-- Es para agrupar los elementos de la cabecera de la tabla -->
@@ -271,6 +271,28 @@
             </tbody>
     </table>
     <hr>
+
+    <div id="zoomModal"> 
+        <img id="zoomImg" src="">
+    </div>
+
+     <script>
+        const zoomableImages = document.querySelectorAll('.zoomable');
+        const zoomModal = document.getElementById('zoomModal');
+        const zoomImg = document.getElementById('zoomImg');
+
+        zoomableImages.forEach(img => {
+            img.addEventListener('click',() => { 
+                zoomImg.src = img.src;
+                zoomModal.style.display = 'flex';
+            });
+        });
+
+        zoomModal.addEventListener('click', () => {
+        zoomModal.style.display = 'none';
+        });
+    </script>
+
     <div style="color: #50b3ff;">
         <a target="_blank" href="https://fer0104.github.io/">¡Conoce nuestra otra pagina!</a>
     </div>
